@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webg</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo.png">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Office</a></li>
+                    <li><a href="">Hotels</a></li>
+                    <li><a href="">contact us</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon">
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="text-box">
+                    <h5>products</h5>
+                    <h1><b>Simplicity</b> <br><b>is best</b></h1>
+
+            </div>
+            <img src="images/circle.png" class"a1">
+            <img src="images/circle.png" class"a2">
+            <img src="images/box.png" class"a3">
+
+        </div>
+        <div class="col">
+            <div class="gallery">
+                <img src="images/pic2.jpg" id="gall" alt="hey">
+                <ul>
+                   
+                    <li class="bu">
+                        01
+                        </li>
+                        <li class="active">
+                            02
+                            </li>
+                            <li class="bu">
+                                03
+                                </li>
+                                <li class="bu">
+                                    04
+                                    </li>
+                </ul>
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+        <img src="images/circles.png" class="p">
+        <img src="images/box.png" class="p1">
+
+    </div>
+    <script>
+        var bt=document.getElementsByClassName("bu");
+        var gal=document.getElementById("gallery");
+        var imgs=new Array(
+            "images/pic1.jpg", "images/pic2.jpg", "images/pic1=3.jpg" ,"images/pic4.jpg"
+        );
+        for(let i=0;i<bu.length;i++){
+            bu[i].onclick=function(){
+                gallery.src=imgs[i];
+            
+            let curr=document.getElementsByClassName("active");
+curr[0].className=curr[0].className.replace("active","");
+this.className+="active";
+        };
+        
+
+    </script>
+</body>
+</html>
